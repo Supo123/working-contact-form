@@ -155,28 +155,10 @@
           row-gap: 30px;
           position: absolute;
           left:90%;
-          top:-10%;
+          top:-60%;
          
         }
-        /* @media(max-width:410px){
-            .info input{
-                width:200px;
-                position: relative;
-                left:80px ;
-            }
-        } */
-
-        /* @media(max-width:304px){
-                .main{
-                    width:350px;
-                }
-                .info input{
-                 position: relative;
-                 left:5px;
-                  
-                   
-
-                } */
+       
                 
             
             @media(max-width:505px){
@@ -225,8 +207,8 @@
             height: 100px;
         }
         .button{
-            width:120px;
-            height:30px;
+            width:133px;
+            height:33px;
             font-size: 20px;
             font-weight: bold;
             background: blue;
@@ -235,7 +217,7 @@
             color: white;
             position: absolute;
             top:95%;
-            left:45%;
+            left:59%;
             transform: translate(-50%,-50%);
             border-radius: 4px;
             transition: transform 0.3s;
@@ -313,7 +295,8 @@ display: none;
 }
 .popup{
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
    
 }
@@ -367,6 +350,47 @@ background-color: rgb(63, 206, 63);
 box-shadow: 0 2px 5px rgba(62, 145, 80, 0.2);
 color: white;
 }
+.back{
+  
+    background: blue;
+    width:136px;
+    height:36px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    position: absolute;
+    left:35%;
+   bottom: -4%;
+   margin-top: 4px;
+   
+}
+.back a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-weight: 800;
+    font-family: sans-serif;
+  
+}
+@media(max-width:504px){
+        .back{
+            width:245px;
+            position: absolute;
+            left:-1%;
+            top:96%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 10px;
+          
+        }
+       
+    }
 
 
 
@@ -407,6 +431,9 @@ color: white;
     </div>
     <div class="popup">
     <button type="submit" class="button" id="submitbtn" onclick=" openpopup()">submit</button>
+    <div class="back">
+        <a href="index.html">back to home</a>
+    </div>
     <div class="popup-container" id="popup3">
 <img src="https://cdn-icons-png.flaticon.com/128/11433/11433360.png">
 <h2>Thank You!</h2>
