@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+           
+            width:100%;
+            height: 100%;
+            background-color: rgb(96, 154, 179); ;
+        }
+        #form{
+            
+        }
+        .main{
+            background: white;
+            width:860px;
+            height: 600px;
+            border-radius: 15px 50px;
+            position: absolute;
+            top:58%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            box-shadow: 0 0 10px #0ef;
+            border: 2px solid blue;
+          
+        }
+       
+
+        @media(max-width:904px){
+            .main-container{
+                /* width:550px;
+                height:400px; */
+                display: flex;
+                flex-direction: column;
+            }
+            .main{
+                width:550px;
+                height:700px;
+               background: white;
+               position: absolute;
+               top:80%;
+              
+            }}
+            @media(max-width:404px){
+                .main-container{
+              
+                    
+                }
+                .main{
+                    width:500px;
+                    position: absolute;
+                    left:70%;
+                    border-radius: 6px;
+                }
+            }
+            @media(max-width:715px){
+                .main{
+                    border-radius: 10px;
+                }
+            }
+            @media(max-width:304px){
+                .main{
+                    width:300px;
+                }
+                .info input{
+                    position:relative;
+                    right:60px;
+                  
+                   
+
+                }
+            }
+         
+        
+        .get{
+            position: absolute;
+            left:50%;
+            transform: translate(-50%);
+        }
+        @media(max-width:914px){
+          .get{
+            z-index: 56;
+            position: absolute;
+           
+            width: 300px;
+          }}
+          @media(max-width:410px){
+            .get{
+                position: relative;
+                left:250px;
+            }
+          }
+        
+        .span{
+            color:rgb(255, 165, 0);
+            font-size: 45px;
+        }
+        .span1{
+            color: rgb(17, 61, 80); 
+            font-size: 45px;
+        }
+        .main-container{
+            display: flex;
+            flex-direction: row;
+           
+            align-items: center;
+            text-align: center;
+            position: absolute;
+            top:10%;
+           
+            justify-content: center;
+            margin-top: 30px;
+            padding: 30px;
+        }
+        @media(max-width:904px){
+            .main-container{
+               display: flex;
+               flex-direction: column;
+              
+            }
+        }
+        .name1{
+            display: flex;
+            flex-direction: row;
+         column-gap: 40px;
+         
+        
+        }
+        .name{
+          margin: 3px;
+        }
+        @media(max-width:904px){
+            .name1{
+                display: flex;
+                flex-direction: column;
+                row-gap: 0px;
+            }
+        }
+        .first{
+            padding: 20px;
+        }
+        .info{
+            display: flex;
+            flex-direction: column;
+          row-gap: 30px;
+          position: absolute;
+          left:90%;
+          top:-10%;
+         
+        }
+        @media(max-width:410px){
+            .info input{
+                width:200px;
+                position: relative;
+                left:80px ;
+            }
+        }
+
+        @media(max-width:304px){
+                .main{
+                    width:350px;
+                }
+                .info input{
+                 position: relative;
+                 left:5px;
+                  
+                   
+
+                }
+                
+            }
+            @media(max-width:505px){
+                .main{
+                    width:350px;
+                    height: 650px;
+                    position: absolute;
+                    top:53%;
+                }
+                .info input{
+                 position: relative;
+                 top:-80px;
+                 left:-30px;
+                 bottom: 30px;
+                width:250px;
+                }
+                .get{
+                position: relative;
+                left:240px;
+                margin: 10px;
+            }
+            
+                
+
+            }
+            @media(max-width:900px){
+                .info input{
+                    position: relative;
+                    left:-30px;
+                }
+            }
+         
+       
+
+        .name3{
+            background-color: rgb(207, 207, 228);
+            border: none;
+            width:280px;
+            height: 40px;
+            text-align: center;
+            border-radius: 5px;
+        }
+        .message{
+            width:480px;
+            height: 100px;
+        }
+        .button{
+            width:120px;
+            height:30px;
+            font-size: 20px;
+            font-weight: bold;
+            background: blue;
+            border: none;
+            outline: none;
+            color: white;
+            position: absolute;
+            top:95%;
+            left:45%;
+            transform: translate(-50%,-50%);
+            border-radius: 4px;
+            transition: transform 0.3s;
+           
+            cursor: pointer;
+            margin-top: 10px;
+        }
+       .button{
+        transform: scale(1);
+       }
+       @media(max-width:904px){
+        .button{
+            margin-top: 20px;
+           position: absolute;
+           left:40%;
+        }
+       }
+       @media(max-width:410px){
+        .button{
+            position: absolute;
+            left:60%;
+        }
+       }
+       @media(max-width:304px){
+        .button{
+            position: absolute;
+            left:31%;
+        }}
+        @media(max-width:504px){
+        .button{
+            width:245px;
+            position: absolute;
+            left:-1%;
+            top:82%;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+        }
+       
+    }
+
+       .icon img{
+width:35px;
+position: absolute;
+right:110%;
+top:18%;
+
+       }
+       #result h1{
+position: absolute;
+top:50%;
+left:50%;
+transform: translate(-50%,-50%);
+font-family: sans-serif;
+flex-wrap: nowrap;
+font-weight: bold;
+display: none;
+z-index: 40;
+       }
+       
+.result{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+#image3{
+width:50px;
+position:absolute;
+top:50%;
+left:50%;
+display: none;
+}
+.popup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.popup-container{
+   
+    align-items: center;
+
+    width:450px;
+    height:250px;
+    background: white;
+    border-radius: 6px;
+    position: absolute;
+    top:0%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    text-align: center;
+    padding: 30px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgb(0,0,0,1);
+    transition: transform 0.4s,top 0.4s;
+}
+.open-popup{
+    visibility: visible;
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+}
+
+
+
+.popup-container img{
+    width:60px;
+  margin-top:-50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgb(0,0,0,0.2);
+}
+.popup-container h2{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.popup-container button{
+    width:80%;
+    height: 35px;
+    margin-top: 40px;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 30px;
+background-color: rgb(63, 206, 63);
+box-shadow: 0 2px 5px rgba(62, 145, 80, 0.2);
+color: white;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <form id="form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="6299e9f1-cf51-4841-8069-8bdcd95a119d">
+    <div class="get">
+        <div class="icon">
+            <img src="https://cdn-icons-png.flaticon.com/128/11524/11524345.png">
+
+        </div>
+        <h1><span class="span1">Get in</span> <span class="span">touch</span></h1>
+    </div>
+   
+    <div class="main">
+       
+<div class="main-container">
+<div class="info">
+    
+    <div class="name1">
+        <div class="first name" ><input type="text" placeholder="Full Name" name="first_name" required class="name3"/></div>
+        <div class="first name"><input type="text" placeholder="Last Name" required class="name3" name="last_name"/></div>
+    </div>
+    <div class="name">
+        <input type="email" placeholder="Email" required class="name3" name="email" id="email"/>
+    </div>
+   
+    <div class="name">
+        <input type="number" placeholder="Mobile number "  name=" mobile_number"required class="name3"/>
+    </div>
+    <div class="name">
+        <input type="text" placeholder="Address " name="addreess"required class="name3"/>
+    </div>
+    <div class="name">
+        <input type="text"name="text" placeholder="Type your message here"required class="name3 message"/>
+    </div>
+    <div class="popup">
+    <button type="submit" class="button" id="submitbtn" onclick=" openpopup()">submit</button>
+    <div class="popup-container" id="popup3">
+<img src="https://cdn-icons-png.flaticon.com/128/11433/11433360.png">
+<h2>Thank You!</h2>
+<p>Your details has been successfully submitted .Thanks!</p>
+<button type="button" onclick="closepopup()">ok</button>
+    </div>
+</div>
+
+</div>
+</div>
+    </div>
+    
+</form>
+<div id="result">
+   <h1 id="submit">you have successfully submited the form</h1>
+    <div id="image">
+<img src="https://cdn-icons-png.flaticon.com/128/11433/11433360.png" id="image3">
+    </div>
+</div>
+
+<script>
+const popup=document.getElementById("popup3");
+const submit=document.getElementById("submitbtn");
+function openpopup(){
+popup.classList.add("open-popup");
+}
+function closepopup(){
+popup.classList.remove("open-popup");
+}
+
+
+
+
+const form = document.getElementById('form');
+const result = document.getElementById('result');
+const calling=document.querySelector("#result");
+const submitedbtn=document.getElementById('submit');
+const img=document.getElementById("image3");
+form.addEventListener('submit', function(e) {
+    const formData = new FormData(form);
+    e.preventDefault();
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    result.innerHTML = "Please wait..."
+
+    fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let json = await response.json();
+            if (response.status == 200) {
+                result.style.position="absolute";
+                result.style.top="50%";
+                result.style.left="50%";
+                result.style.transform="translate(-50%,-50%)";
+                result.style.fontSize="30px";
+                result.style.fontFamily="poppins";
+                result.style.color="blue";
+               
+
+                result.innerHTML = "";
+                
+
+            } else {
+                console.log(response);
+                result.innerHTML = json.message;
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            result.innerHTML = "Something went wrong!";
+        })
+        .then(function() {
+            form.reset();
+            setTimeout(() => {
+                // form.style.display="none";
+                
+                    openpopup();
+                    closepopup();
+               
+                
+               
+            }, 1000);
+        })
+        ;
+        
+               
+
+});
+
+</script>
+</body>
+</html>
