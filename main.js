@@ -119,12 +119,20 @@ trendclose.addEventListener("click",()=>{
 let icon =document.querySelector(".menu-icon");
 let ul=document.querySelector(".allLinks");
 let homepageItems =document.querySelectorAll(".home-page");
+const crossiconbar=document.querySelector(".cross-iconbar");
 
 icon.addEventListener("click",()=>{
-    ul.classList.toggle("showMenu");
+    icon.style.transform="scale(0)";
+    crossiconbar.style.transform="scale(1)";
+    ul.classList.add("showMenu");
+});
+crossiconbar.addEventListener("click",()=>{
+    icon.style.transform="scale(1)";
+    crossiconbar.style.transform="scale(0)";
+    ul.classList.remove("showMenu");
+
 });
 
-    /// submit button
   
 });
 

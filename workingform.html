@@ -21,11 +21,11 @@
         }
         .main{
             background: white;
-            width:860px;
-            height: 600px;
+            width:800px;
+            height: 550px;
             border-radius: 15px 50px;
             position: absolute;
-            top:58%;
+            top:60%;
             left:50%;
             transform: translate(-50%,-50%);
             box-shadow: 0 0 10px #0ef;
@@ -46,7 +46,7 @@
                 height:700px;
                background: white;
                position: absolute;
-               top:80%;
+               top:94%;
               
             }}
             /* @media(max-width:404px){
@@ -82,15 +82,21 @@
          
         
         .get{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+
             position: absolute;
             left:50%;
             transform: translate(-50%);
         }
+       
         @media(max-width:914px){
           .get{
             z-index: 156;
             position: absolute;
-           
+           font-size: 10px;
             width: 300px;
           }}
        
@@ -154,8 +160,8 @@
             flex-direction: column;
           row-gap: 30px;
           position: absolute;
-          left:90%;
-          top:-60%;
+          left:95%;
+          top:-90%;
          
         }
        
@@ -166,7 +172,7 @@
                     width:350px;
                     height: 550px;
                     position: absolute;
-                    top:53%;
+                    top:60%;
                 }
                 .info input{
                  position: relative;
@@ -178,10 +184,24 @@
                 }
                 .get h1{
                 position: relative;
-                left:-5px;
+               
+                left:-20px;
+              
                 margin: 10px;
             }
-            
+            .info{
+                position: absolute;
+                top:-40%;
+            }
+            .span1{
+                font-size: 30px;
+            }
+            .span{
+                font-size: 30px;
+            }
+            .icon{
+                /* width:30px; */
+            }
                 
 
             }
@@ -203,7 +223,7 @@
             border-radius: 5px;
         }
         .message{
-            width:480px;
+            width:430px;
             height: 100px;
         }
         .button{
@@ -217,7 +237,7 @@
             color: white;
             position: absolute;
             top:95%;
-            left:59%;
+            left:52%;
             transform: translate(-50%,-50%);
             border-radius: 4px;
             transition: transform 0.3s;
@@ -264,9 +284,19 @@
        .icon img{
 width:35px;
 position: absolute;
-right:110%;
+
+right:80%;
 top:18%;
 
+       }
+       @media(max-width:505px){
+        .icon img{
+            width:30px;
+position: absolute;
+left:1%;
+right:80%;
+top:18%;
+        }
        }
        #result h1{
 position: absolute;
@@ -324,6 +354,14 @@ display: none;
     top:50%;
     transform: translate(-50%,-50%) scale(1);
 }
+@media(max-width:505px){
+    .popup-container{
+        width: 300px;
+        height:220px;
+        position: absolute;
+        left:34%;
+    }
+}
 
 
 
@@ -362,7 +400,7 @@ color: white;
     align-items: center;
     border-radius: 5px;
     position: absolute;
-    left:35%;
+    left:30%;
    bottom: -4%;
    margin-top: 4px;
    
@@ -391,8 +429,28 @@ color: white;
         }
        
     }
+#important-message{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family:  sans-serif;
+    font-weight: bold;
+    margin-top: 5px;
+    padding: 4px;
 
-
+}
+#important-message:hover{
+    color: blue;
+}
+@media(max-width:505px){
+    #important-message{
+        font-size: 15px;
+    position: absolute;
+    right:36%;
+    }
+}
 
     </style>
 </head>
@@ -404,7 +462,11 @@ color: white;
             <img src="https://cdn-icons-png.flaticon.com/128/11524/11524345.png">
 
         </div>
+
         <h1><span class="span1">Get in</span> <span class="span">touch</span></h1>
+        <div>
+            <h4 id="important-message">Email us and keep upto date with our latest news</h4>
+        </div>
     </div>
    
     <div class="main">
@@ -427,7 +489,7 @@ color: white;
         <input type="text" placeholder="Address " name="addreess"required class="name3"/>
     </div>
     <div class="name">
-        <input type="text"name="text" placeholder="Type your message here"required class="name3 message"/>
+        <input type="text"name="text" placeholder="Type your message here"required class="name3 message" id="yourmessage"/>
     </div>
     <div class="popup">
     <button type="submit" class="button" id="submitbtn" onclick=" openpopup()">submit</button>
@@ -523,7 +585,7 @@ form.addEventListener('submit', function(e) {
                
                 
                
-            }, 1000);
+            }, 8000);
         })
         ;
         
