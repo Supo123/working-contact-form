@@ -110,12 +110,29 @@ transition: 0.8s ease-in-out;
             transform: scale(0.6);
             font-size: 38px;
         }
-        .home1 a{
+        .home1{
             text-decoration: none;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
             color: white;
             font-size: 1em;
-
+            width:60%;
+            height:40px;
+            margin:10px auto;
+            /* display: block; */
+            color:white;
+            background: #573b8a;
+            font-size: 1em;
+            font-weight: normal;
+            outline:none ;
+            border: none;
+            transition: 0.3s ease-in-out;
+            cursor: pointer;
+          
         }
+        
         /* #chk:checked ~ .login{
             transform: translateY(-500px);
         }
@@ -141,8 +158,10 @@ transition: 0.8s ease-in-out;
               
             </form>
             <button class="select" id="super">login</button>
-            <button class="home1">
-                <a href="index.html">Home</a></button>
+            <!-- <button class="home1"> -->
+                <a href="index.html" class="home1">Home</a>
+            
+            <!-- </button> -->
         </div>
         <div class="login">
             <form>
@@ -153,8 +172,8 @@ transition: 0.8s ease-in-out;
                 <button>Login</button>
                
             </form>
-            <button class="home1">
-                <a href="index.html">Home</a></button>
+           
+                <a href="index.html" class="home1">Home</a>
         </div> 
     </div>
     <script>
