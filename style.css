@@ -20,10 +20,10 @@ body{
 } 
 
 nav{
-    padding-top: 20px;
+    padding-top: 12px;
     display: flex;
     justify-content: space-between;
-    margin: 15px;
+    margin: 10px;
 }
 
     nav a{
@@ -56,10 +56,14 @@ nav span{
    display: flex;
    justify-content: space-between;
    width: 400px;
+   cursor: pointer;
+  
 }
  .last{
     display: flex;
     flex-direction:row;
+    text-align: center;
+    align-items: center;
     position: absolute;
     margin:auto;
     right:0px;
@@ -69,14 +73,34 @@ nav span{
    
     
 } 
+@media(max-width:800px){
+    .last{
+        display: flex;
+        flex-direction:row;
+         position: absolute;
+        margin:auto; 
+       
+        transform: scale(0);
+      
+         justify-content: space-between; 
+        width: 400px;
+       
+    }
+    .middle{
+        display: flex;
+        flex-direction: row;
+    }
+}
 .last a{
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
 }
 .allLinks,.middle,.last{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    cursor: pointer;
 
    
 }
@@ -88,7 +112,13 @@ nav span{
     justify-content: space-between;
     text-decoration: none;
     color: white;
-   
+   margin:15px;
+   cursor: pointer;
+}
+.allLinks a:hover{
+    text-decoration:underline ;
+    text-decoration-color: #ea35a5;
+
 }
 .cross-iconbar{
     width:90px;
@@ -127,7 +157,7 @@ nav span{
         background-color: rgb(50, 89, 143);
 
         color: black;
-        z-index: 28;
+        z-index: 128;
         border-radius: 6px;
         text-decoration: #4158D0;
         
@@ -145,17 +175,7 @@ nav span{
 }
 
  
-  /* .last{
-   
-    display: flex; 
-    
   
-     /* justify-content:space-between;
-    padding: 10px; */
-    /* box-sizing: border-box; */
-    /* margin-left: 40px; 
-    width:200px;  */
- */
 
 .lastlink{
   position: absolute;
@@ -244,14 +264,15 @@ text-align: center;
 @media(max-width:700px){
     .job-info{
         width:300px;
+        z-index: 200;
     }
 }
 @media(max-width:535px){
     .job-info{
         width:300px;
         position: absolute;
-        left:25%;
-        z-index: 160;
+        left:20%;
+        z-index: 260;
     }
 }
 .job-finder{
@@ -955,6 +976,7 @@ max-width:100vw;
 .footer2{
     transform: scale(0);
     z-index: 100;
+    border: 2px solid blue;
 }
 @media(max-width:543px){
     .footer{
