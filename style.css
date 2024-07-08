@@ -1006,3 +1006,10 @@ max-width:100vw;
         width:100%;
     }
 }
+#favicon{
+ 
+    font-size: 30px;
+    padding: 10px;
+    text-decoration: none;
+    margin-right: 5px;
+}
